@@ -9,7 +9,7 @@
     </head>
     <body>
     {% if site.data.baby.is_born %}
-        <p id="yes">She's Here!</p>
+        <p id="yes">{% if site.data.baby.gender == 'female' %}Sh{% else %}H{% endif %}e's Here!</p>
         <p><img id="baby" src="images/baby.jpg" /></p>
         <p><img id="separator" src="images/separator.png" /></p>
         <div>
