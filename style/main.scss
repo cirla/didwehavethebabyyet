@@ -1,0 +1,67 @@
+---
+---
+@import url("http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto|Rochester");
+
+body {
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+p#yes {
+    font-size: 70pt;
+    font-family: 'Rochester', cursive;
+    margin: 10px 0px 0px 0px;
+}
+
+p#no {
+    display: inline-block;
+    margin-top: 200px;
+    font-weight: bold;
+    font-size: 120pt;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+img#baby {
+    height: 300px;
+    width: auto;
+}
+
+img#separator {
+    height: 100px;
+    width: auto;
+    margin-top: -50px;
+}
+
+p#first_names, p#last_name {
+    font-size: 48pt;
+    font-family: 'Rochester', cursive;
+}
+
+p#first_names {
+    margin: -40px 0px 0px 0px;
+}
+
+p#last_name {
+    margin: -10px 0px 30px 0px;
+}
+
+p#date, p#measurements {
+    font-size: 18pt;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: -20px;
+}
+
+p#date {
+    margin-bottom: 0px;
+}
+
+p#measurements {
+    margin-bottom: 100px;
+}
+
+span.info {
+    font-weight: bold;
+}
+

@@ -6,21 +6,22 @@ title: Did Dani Have The Baby Yet?
     <head>
         <title>{{ page.title }}</title>
         <meta charset="utf-8">
-        <style type="text/css">
-            body {text-align: center;}
-            span#answer {
-                display: inline-block;
-                margin-top: 200px;
-                font-weight: bold;
-                font-size: 120pt;
-                font-family: Helvetica, sans-serif;
-                text-decoration: none;
-                color: black;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="style/main.css">
     </head>
     <body>
-        <span id="answer">No.</span>
+    {% if site.data.baby.is_born %}
+        <p id="yes">She's Here!</p>
+        <p><img id="baby" src="images/baby.jpg" /></p>
+        <p><img id="separator" src="images/separator.png" /></p>
+        <div>
+            <p id="first_names">{{ site.data.baby.first_name }} {{ site.data.baby.middle_name }}</p>
+            <p id="last_name">{{ site.data.baby.last_name }}</p>
+            <p id="date">BORN <span class="info">{{ site.data.baby.birth_datetime | date: "%A, %B %-d %Y" | upcase }}</span> AT <span class="info">{{ site.data.baby.birth_datetime | date: "%I:%M %p" }}</span><p>
+            <p id="measurements">WEIGHING <span class="info">{{ site.data.baby.weight_pounds }} LBS. {{ site.data.baby.weight_ounces }} OZ.</span> AND MEASURING <span class="info">{{ site.data.baby.length_inches }} INCHES</span> LONG</p>
+        </div>
+    {% else %}
+        <p id="no">No.</p>
+    {% endif %}
     </body>
 </html>
 
