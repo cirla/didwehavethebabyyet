@@ -1,9 +1,9 @@
-is_born: false
+is_born: true
 gender: female
-first_name: Baby
-middle_name: Girl
+first_name: Fiona
+middle_name: Eleanor
 last_name: Cheeseman
-birth_datetime: 2014-12-25 12:00:00 -5
+birth_datetime: 2014-12-31 06:55:00 -5
 weight_pounds: 7
-weight_ounces: 5
-length_inches: 20
+weight_ounces: 0
+length_inches: 0
